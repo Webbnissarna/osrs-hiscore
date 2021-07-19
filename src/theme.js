@@ -7,6 +7,13 @@ const theme = {
     lg: "0.75rem",
     xl: "1rem",
   },
+  fontSizes: {
+    xs: "0.625rem",
+    sm: "0.75rem",
+    md: "1rem",
+    lg: "1.25rem",
+    xl: "1.75rem",
+  },
 };
 
 export default theme;

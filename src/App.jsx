@@ -28,7 +28,7 @@ export default function App() {
 function User({ data }) {
   return (
     <Box>
-      <ExpandedContent heading={"skills"}>
+      <ExpandedContent heading={"Skills"}>
         {data.data.skills.map((skill) => {
           return (
             <Row key={skill.name}>
@@ -51,16 +51,17 @@ function ExpandedContent({ children, heading }) {
       sx={{
         display: "flex",
         flexDirection: "column",
-        padding: "sm",
-        backgroundColor: "yellow",
+        padding: "md",
+        backgroundColor: "darkslategrey",
         cursor: "pointer",
       }}
       onClick={() => {
         setExpanded(!expanded);
       }}
-      layout
     >
-      <Text sx={{ color: "blue", fontWeight: "semibold" }}>{heading}</Text>
+      <Text sx={{ color: "gold", fontWeight: "bold", fontSize: "lg" }}>
+        {heading}
+      </Text>
       {expanded && children}
     </motion.div>
   );
